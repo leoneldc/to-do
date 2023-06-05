@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./notFound.css";
 
 export const NotFound = () => {
@@ -9,9 +10,9 @@ export const NotFound = () => {
           <span className="text-danger">Opps!</span> Page not found.
         </p>
         <p className="lead">The page you’re looking for doesn’t exist.</p>
-        <a href="index.html" className="btn btn-primary">
-          Go Home
-        </a>
+        <Link to="/" className="btn btn-outline-primary">
+          Go to Home
+        </Link>
       </div>
     </div>
   );
