@@ -9,10 +9,12 @@ import "./index.css";
 import { NewList } from "./routes/NewList.jsx";
 import { List } from "./routes/List.jsx";
 import { Home } from "./routes/home.jsx";
+import { NotFound } from "./routes/NotFound.jsx";
 
 const router = createHashRouter([
   {
     path: "/",
+    errorElement: <NotFound />,
     element: (
       <TaskListContextProvider>
         <App />
